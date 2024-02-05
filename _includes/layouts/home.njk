@@ -74,7 +74,14 @@ layout: layouts/header-and-nav.njk
     </div>
 </section>
 
-<div class="centreBlog" id="blog">
+<section class="centreBlog" id="blog">
     <h2>My blog</h2>
     {{ content | safe }}
-</div>
+</section>
+
+<section>
+    <form>
+        <label for="user-email">Email:</label><br>
+        <input type="email" id="user-email" name="user-email">
+    </form>
+</section>
