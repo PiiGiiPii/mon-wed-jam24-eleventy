@@ -1,16 +1,80 @@
 ---
-layout: layouts/base.njk
+layout: layouts/header-and-nav.njk
 ---
-<!-- Delete this message, it will also remove the component CSS from the bundle -->
-{%- css %}{% include "public/css/message-box.css" %}{% endcss %}
-<div class="message-box">
-	<ol>
-		<li>Edit the <code>_data/metadata.js</code> with your blog’s information.</li>
-		<li>(Optional) Edit <code>eleventy.config.js</code> with your <a href="https://www.11ty.dev/docs/config/">configuration preferences</a>.</li>
-		<li>Delete this message from <code>_includes/layouts/home.njk</code>.</li>
-	</ol>
-	<p><em>This is an <a href="https://www.11ty.dev/">Eleventy project</a> created from the <a href="https://github.com/11ty/eleventy-base-blog"><code>eleventy-base-blog</code> repo</a>.</em></p>
-</div>
-<!-- Stop deleting -->
+{# Skills section #}
+<section class="container p-5">
+    <div class="row">
+        <div class="col-12">
+            <h2 id="skills">My skills</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">
+            <ul class="skills-list">
+                <li><img src="/img/html-logo-resized.png" alt="html logo" width="30px">HTML</li>
+                <li><img src="/img/css-logo-resized.png" alt="css logo" width="30px">CSS</li>
+                <li><img src="/img/js-logo-resized.png" alt="js logo" width="30px">JS</li>
+                <li><img src="/img/react-logo-resized.png" alt="React logo" width="30px">REACT</li>
+                <li><img src="/img/github-logo-resized.png" alt="Github logo" width="30px">Github</li>
+                <li><img src="/img/git-logo-resized.png" alt="Git logo" width="30px">Git</li>
+                <li><img src="/img/11ty-logo-resized.png" alt="11ty logo" width="30px">11ty</li>
+                <li><img src="/img/photoshop-logo-resized.png" alt="Photoshop logo" width="30px">Photoshop</li>
+                <li><img src="/img/premiere-logo-resized.png" alt="Adobe premiere pro logo" width="30px">Adobe premiere pro</li>
+            </ul>
+        </div>
+        <div class="col-md">
+            <ul class="skills-list">
+                <li>Time management</li>
+                <li>Effective communication</li>
+                <li>Responds well to feedback</li>
+                <li>Organisation</li>
+                <li>Problem solving</li>
+                <li>Adaptive</li>
+                <li>Open-minded</li>
+                <li>Eleventy</li>
+                <li>Integrity</li>
+                <li>Personable</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-{{ content | safe }}
+{# Projects section #}
+<section class="container">
+    <h2 id="projects">My projects</h1>
+</section>
+
+{# Carousel section #}
+<section class="container">
+    <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="/img/polygons.jpg" class="d-block w-100" alt="Dungeons and Polygons project">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="/img/cards-dynamic.jpg" class="d-block w-100" alt="Packer's Provisions project">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/react-project.jpg" class="d-block w-100"alt="React project">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<div class="centreBlog" id="blog">
+    <h2>My blog</h2>
+    {{ content | safe }}
+</div>

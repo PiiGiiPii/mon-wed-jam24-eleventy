@@ -1,17 +1,19 @@
 ---
-title: This is my second post with a much longer title.
-description: This is a post on My Blog about leveraging agile frameworks.
-date: 2018-07-04
+title: Week 2
+description: This post is about what I learned creating a blog using 11ty
+date: 2024-02-01
 tags:
-  - number 2
+  - 11ty
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+## Learning Eleventy
+This week I've learned some basics on how to use Eleventy to create a blog.
 
-## Section Header
+This was my first time working on a project using a lot of files and even more importantly a lot of files using languages I am not familiar with.
 
-<a href="/blog/firstpost/">First post</a>
-<a href="/blog/thirdpost/">Third post</a>
+.md files and .njk files are totally new to me so I began trying to decipher how they worked and communicated with the other files in the project.
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
-
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+- I've googled keywords.
+- I've asked AI what specific code does.
+- I've tried to break it down for myself first.
+- After getting an idea of what it meant I tried testing changing code to see the effects.
+- I've just learned that you can use the '-' key to create a bullet point

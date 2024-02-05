@@ -1,26 +1,26 @@
 ---
-title: This is my first post.
-description: This is a post on My Blog about agile frameworks.
-date: 2018-05-01
+title: Week 1
+description: This is a post sbout
+date: 2024-01-31
 tags:
-  - another tag
+  - git
+  - bootstrap
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+I've given myself the challenge of sharing my progress in web development every week. 
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+Here's the website I worked on this week - [Packer's Provisions](https://piigiipii.github.io/)
 
-## Section Header
+It is the start to a website I will be developing for my Dad who makes South African food products.
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+What I've learned this week:
+How to implement bootstrap components and utilities.
+How to use bootstrap to make a webpage responsive.
+How to create a sticky nav-bar.
+How to use flex-grow.
+How to use the command line to interact with github.
+How to use github to host a live site.
 
-```diff-js
- // this is a command
- function myCommand() {
-+  let counter = 0;
--  let counter = 1;
-   counter++;
- }
+Challenges:
+I wanted a striking image and the title of the page to appear over the whole screen when opening the webpage which the user would scroll past to find out more information or would use the nav to quickly jump past. I started out by setting the element to 100vh, but realised that the nav was taking up some of the space too. I've started using AI to support me in finding solutions to these problems which pointed me towards using flex-grow. I already have some understanding of how flex works and I was able to solve the problem. 
 
- // Test with a line break above this line.
- console.log('Test');
-```
+Another problem I was having was that my elements were taking up more space than the width of the viewport. I identified this was due to the contact information not wrapping on to the next line. I found an acceptable solution which was to assign a font-size which is sized relative to the screen
