@@ -30,6 +30,13 @@ a{
 	color: #D5B263 !important;
 
 }
+a:hover{
+	color: white !important;
+}
+.skills-list li{
+	padding: 0.5em;
+	list-style-type: none;
+}
 .fill-viewport {
 	height: 100svh;
 }
@@ -142,15 +149,6 @@ code {
 	word-break: break-all;
 }
 
-.home-link {
-	font-size: 1em; /* 16px /16 */
-	font-weight: 700;
-	margin-right: 2em;
-}
-.home-link:link:not(:hover) {
-	text-decoration: none;
-}
-
 /* Nav */
 .nav {
 	display: flex;
@@ -161,12 +159,6 @@ code {
 .nav-item {
 	display: inline-block;
 	margin-right: 1em;
-}
-.nav-item a[href]:not(:hover) {
-	text-decoration: none;
-}
-.nav a[href][aria-current="page"] {
-	text-decoration: underline;
 }
 
 /* Posts list */
@@ -248,14 +240,6 @@ code {
 a[href].header-anchor,
 a[href].header-anchor:visited {
 	color: transparent;
-}
-a[href].header-anchor:focus,
-a[href].header-anchor:hover {
-	text-decoration: underline;
-}
-a[href].header-anchor:focus,
-:hover > a[href].header-anchor {
-	color: #aaa;
 }
 
 h2 + .header-anchor {
