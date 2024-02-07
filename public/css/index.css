@@ -105,6 +105,11 @@ a:hover {
 	border-left: 1px solid grey;
 }
 
+.projects{
+	background-color: #293040;
+	color: white;
+}
+
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
 	clip: rect(0 0 0 0);
