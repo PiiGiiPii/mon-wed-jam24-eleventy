@@ -7,17 +7,17 @@ layout: layouts/header-and-nav.njk
 </section>
 
 {# Projects section #}
-<section id ="projects" class="projects">
+<section id ="projects" class="p-5">
     {% include "projects.njk" %}
 </section>
 
 {# Carousel section #}
-<div class="centred">
+<section class="p-5">
     {% include "carousel.njk" %}
-</div>
+</section>
 
 {# Blog section #}
-<section class="centred" id="blog">
-    <h2>My blog</h2>
-    {{ content | safe }}
+<section class="p-5">
+    <h2 id="blog">My blog</h2>
+    <div class="centred">{{ content | safe }}</div>
 </section>
