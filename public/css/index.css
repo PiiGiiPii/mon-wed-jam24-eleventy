@@ -5,15 +5,14 @@ Global stylesheet {
 body {
 	padding: 0;
 	margin: 0;
-	min-width: 0;
-	min-height: 0;
 }
 
 html {
 	overflow-y: scroll;
 }
 
-header {
+header,
+footer {
 	background-color: #293040;
 	color: white;
 	overflow: hidden;
@@ -50,6 +49,15 @@ a:hover {
 	border-bottom: solid grey 0.5px;
 	width: fit-content;
 }
+.card-template{
+	background-color: #595246;
+	color: white;
+}
+
+.projects{
+	background-color: #293040;
+	color: white;
+}
 #reactLogo{
 	animation-name: moveLogo;
 	animation-duration: 6s;
@@ -66,7 +74,7 @@ a:hover {
 	100% {transform: translate(0, 0);}
 }
 .fill-viewport {
-	height: 100svh;
+	min-height: 100svh;
 }
 
 .fill-remaining-space {
@@ -102,7 +110,18 @@ a:hover {
 	min-width: 300px;
 	margin: auto;
 	padding: 20px;
+}
+
+.centred-blog {
+	width: 40vw;
+	min-width: 300px;
+	margin: auto;
+	padding: 20px;
 	border-left: 1px solid grey;
+}
+
+.projects{
+
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
