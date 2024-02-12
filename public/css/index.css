@@ -62,6 +62,17 @@ a:hover {
 	background-color: #293040;
 	color: white;
 }
+.indent{
+	margin: 1rem 0  0 3rem;
+}
+
+.button-color{
+	background-color: #293040;
+}
+.button-div{
+	margin: 0 auto !important;
+	width: max-content;
+}
 #reactLogo{
 	animation-name: moveLogo;
 	animation-duration: 6s;
