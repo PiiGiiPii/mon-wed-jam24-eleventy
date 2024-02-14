@@ -1,15 +1,41 @@
 ---
-layouts: "/layouts/base.njk"
+layout: layouts/nav.njk
 ---
 
-<form name="contact" netlify>
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"></div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-            <textarea name="textArea" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
+<form name="contact" class="d-grid gap-2" netlify>
+    <div class="p-3">
+        <fieldset class="d-grid gap-1">
+            <label for="fname" class="form-label" >First name</label>
+            <input type="text" name="fname" id="fname" class="form-control" autocomplete="given-name">
+            <label for="lname" class="form-label">Last name</label>
+            <input type="text" name="lname" id="lname" class="form-control" autocomplete="family-name">
+        </fieldset>
+        <fieldset class="d-grid gap-1">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" name="email" class="form-control" id="email"
+                placeholder="name@example.com" autocomplete="on">
+            <label for="phoneNumber" class="form-label">Phone number</label>
+            <input type="tel" name="phoneNumber" class="form-control" id="phoneNumber" maxlength="13" autocomplete="tel">
+        </fieldset>
+        <fieldset class="d-grid gap-1">
+            <legend>What is your enquiry?</legend>
+            <select name="enquiry" id="enquiry" >
+                <option value="Build a website">Build a new website</option>
+                <option value="Optimisation">Optimise existing website</option>
+                <option value="Improve accessiblity">Improve accessiblity</option>
+                <option value="Job opportunity">Job opportunity</option>
+                <option value="Other">Other</option>
+            </select>
+            <legend>Any additional information</legend>
+            <textarea name="textArea" class="form-control" id="additionalInformation" rows="3"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Sign up for the newsletter</legend>
+            <input type="radio" name="signup" id="signupYes" value="yes">
+            <label for="signupYes">Yes</label> <br>
+            <input type="radio" name="signup" id="signupNo" value="no">
+            <label for="signupNo">No</label>
+        </fieldset>
+        <button type="submit">Submit</button>
     </div>
-    <button class="btn-primary" type="submit">Submit</button>
 </form>
