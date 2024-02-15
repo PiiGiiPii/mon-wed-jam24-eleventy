@@ -36,6 +36,14 @@ layout: layouts/nav.njk
             <input type="radio" name="signup" id="signupNo" value="no">
             <label for="signupNo">No</label>
         </fieldset>
+        <fieldset>
+            <legend>Terms and conditions</legend>
+          <p>We will not share your data with outside parties. We cannot guarantee that netlify will secure your data. Do you agree to share your data on these grounds?</p>
+            <input type="radio" name="termsAndConditions" id="termsAndConditionsYes"><label for="termsAndConditionsYes">Yes</label>
+            <br>
+            <input type="radio" name="termsAndConditions" id="termsAndConditionsNo" value="no">
+            <label for="termsAndConditionsNo">No</label>
+        </fieldset>
         <button type="submit">Submit</button>
     </div>
 </form>
