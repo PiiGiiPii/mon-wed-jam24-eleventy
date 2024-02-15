@@ -7,17 +7,23 @@ body {
 	margin: 0;
 	min-width: 0;
 	min-height: 0;
+	background-color: #293040;
+	color: white;
 }
 img{
 	max-width: 100%;
 }
+
 /* *{
 	border: red solid 1px;
 } */
 
+footer{
+	background-color: #595246;
+}
+
 header,
 footer {
-	background-color: #293040;
 	color: white;
 	overflow: hidden;
 }
@@ -154,6 +160,7 @@ button:hover {
 	margin: auto;
 	padding: 20px;
 	border-left: 1px solid grey;
+	margin-bottom: 20px;
 }
 
 .projects{

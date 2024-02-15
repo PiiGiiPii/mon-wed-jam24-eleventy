@@ -2,48 +2,79 @@
 layout: layouts/nav.njk
 ---
 
-<form name="contact" class="d-grid gap-2" netlify>
-    <div class="p-3">
-        <fieldset class="d-grid gap-1">
-            <label for="fname" class="form-label" >First name</label>
-            <input type="text" name="fname" id="fname" class="form-control" autocomplete="given-name">
-            <label for="lname" class="form-label">Last name</label>
-            <input type="text" name="lname" id="lname" class="form-control" autocomplete="family-name">
-        </fieldset>
-        <fieldset class="d-grid gap-1">
-            <label for="email" class="form-label">Email address</label>
-            <input type="email" name="email" class="form-control" id="email"
-                placeholder="name@example.com" autocomplete="on">
-            <label for="phoneNumber" class="form-label">Phone number</label>
-            <input type="tel" name="phoneNumber" class="form-control" id="phoneNumber" maxlength="13" autocomplete="tel">
-        </fieldset>
-        <fieldset class="d-grid gap-1">
-            <legend>What is your enquiry?</legend>
-            <select name="enquiry" id="enquiry" >
-                <option value="Build a website">Build a new website</option>
-                <option value="Optimisation">Optimise existing website</option>
-                <option value="Improve accessiblity">Improve accessiblity</option>
-                <option value="Job opportunity">Job opportunity</option>
-                <option value="Other">Other</option>
-            </select>
-            <legend>Any additional information</legend>
-            <textarea name="textArea" class="form-control" id="additionalInformation" rows="3"></textarea>
-        </fieldset>
-        <fieldset>
-            <legend>Sign up for the newsletter</legend>
-            <input type="radio" name="signup" id="signupYes" value="yes">
-            <label for="signupYes">Yes</label> <br>
-            <input type="radio" name="signup" id="signupNo" value="no">
-            <label for="signupNo">No</label>
-        </fieldset>
-        <fieldset>
-            <legend>Terms and conditions</legend>
-          <p>We will not share your data with outside parties. We cannot guarantee that netlify will secure your data. Do you agree to share your data on these grounds?</p>
-            <input type="radio" name="termsAndConditions" id="termsAndConditionsYes"><label for="termsAndConditionsYes">Yes</label>
-            <br>
-            <input type="radio" name="termsAndConditions" id="termsAndConditionsNo" value="no">
-            <label for="termsAndConditionsNo">No</label>
-        </fieldset>
-        <button type="submit">Submit</button>
+<div class="container my-2">
+    <div class="row">
+        <section class="col-md-9">
+            <form name="contact" class="d-grid gap-2" onsubmit="return validateForm()" netlify>
+                <div class="p-3">
+                    <fieldset class="d-grid gap-1">
+                        <label for="fname" class="form-label">First name</label>
+                        <input type="text" name="fname" id="fname" class="form-control" autocomplete="given-name">
+                        <label for="lname" class="form-label">Last name</label>
+                        <input type="text" name="lname" id="lname" class="form-control" autocomplete="family-name">
+                    </fieldset>
+                    <fieldset class="d-grid gap-1">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com"
+                            autocomplete="on">
+                        <label for="phoneNumber" class="form-label">Phone number</label>
+                        <input type="tel" name="phoneNumber" class="form-control" id="phoneNumber" maxlength="13"
+                            autocomplete="tel">
+                    </fieldset>
+                    <fieldset class="d-grid gap-1">
+                        <legend>What is your enquiry?</legend>
+                        <select name="enquiry" id="enquiry">
+                            <option value="" disabled selected>Select your option</option>
+                            <option value="Build a website">Build a new website</option>
+                            <option value="Optimisation">Optimise existing website</option>
+                            <option value="Improve accessiblity">Improve accessiblity</option>
+                            <option value="Job opportunity">Job opportunity</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <legend>Any additional information</legend>
+                        <textarea name="textArea" class="form-control" id="additionalInformation" rows="3"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Sign up for the newsletter</legend>
+                        <input type="radio" name="signup" id="signupYes" value="yes">
+                        <label for="signupYes">Yes</label> <br>
+                        <input type="radio" name="signup" id="signupNo" value="no">
+                        <label for="signupNo">No</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Terms and conditions</legend>
+                        <p>We will not share your data with outside parties. We cannot guarantee that netlify will
+                            secure
+                            your data. Do you agree to share your data on these grounds?</p>
+                        <input type="checkbox" name="terms" id="terms" value="Agreed" onchange="activateButton(this)"> I agree to the
+                        terms and conditions
+                    </fieldset>
+                    <button type="submit" name="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+        <section class="col-md-3">
+            <address class="d-grid gap-5 mt-4">
+                <h2>Contact information</h2>
+                <div>Peter-Graeme Packer</div>
+                <div><i class="bi bi-envelope-fill"></i> packerpg@gmail.com</div>
+                <div><i class="bi bi-linkedin"></i><a href="https://www.linkedin.com/in/peter-graeme-packer-154094232"
+                        target="_blank">LinkedIn</a></div>
+                <div><i class="bi bi-telephone"></i> 07983084447</div>
+            </address>
+        </section>
     </div>
-</form>
+</div>
+
+<script>
+    function validateForm() {
+        const checkboxEl = document.getElementById("terms");
+        if(terms.checked){
+            return true;
+        }
+        else{
+            alert("You have not agreed to the terms");
+            return false;
+        }
+    }
+</script>
