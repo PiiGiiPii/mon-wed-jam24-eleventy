@@ -1,6 +1,10 @@
 ---
-title: Blog (Draft)
-date: 2040-02-01
-draft: true
+title: Entry 3
+description: An update after finishing my first bootcamp
+date: 2024-03-29
+tags:
+ - JavaScript
+ - HTML
+ - CSS
 ---
-This blog won't go live on the server as draft is set to true.
+Today marks my completion of my first ever bootcamp!
