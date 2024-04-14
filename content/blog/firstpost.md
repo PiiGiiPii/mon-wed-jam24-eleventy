@@ -1,6 +1,6 @@
 ---
 title: Entry 1
-description: This is a post sbout
+description: This is my introductory post to my web development journey.
 date: 2024-01-31
 tags:
   - git
