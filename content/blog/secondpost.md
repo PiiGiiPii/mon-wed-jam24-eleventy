@@ -1,5 +1,5 @@
 ---
-title: Week 2
+title: Entry 2
 description: This post is about what I learned creating a blog using 11ty
 date: 2024-02-01
 tags:

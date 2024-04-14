@@ -1,5 +1,5 @@
 ---
-title: Week 1
+title: Entry 1
 description: This is a post sbout
 date: 2024-01-31
 tags:
